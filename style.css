@@ -1,0 +1,232 @@
+*{
+    box-sizing: border-box; /*padding do elementos nao afete a largura*/
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Circular', Helvetica, Arial, sans-serif;
+}
+/*Utility classes*/
+
+.btn-primary{
+    background-color: #1ED760;
+    line-height: 16px;
+    letter-spacing: 1.4px;
+    padding: 16px 40px 16px;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    letter-spacing: 1px; /*Espaço entre as letras*/
+    font-weight: bold;
+    cursor: pointer;
+    transition: all .5s;
+}
+.btn-primary:hover{
+    background-color: #ffffff;
+}
+
+.logo{
+    height: 40px;
+    width: auto;
+    cursor: pointer;
+ }
+
+/*Navbar*/
+
+#navbar{
+    display: flex;
+    background-color: rgba(0, 0, 0, .95);
+    justify-content: center;
+    color: #ffffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+#navbar .navbar-container{
+    width: 85%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#navbar .navbar-container ul{
+    display: flex;
+    list-style: none;
+}
+#navbar .navbar-container ul li{
+    padding: 28px 17px;
+   font-weight: bold;
+   cursor: pointer;
+}
+
+#navbar .navbar-container ul li:hover{
+    color: #1ED760;
+}
+#navbar .navbar-container ul .separator-navbar{
+    font-weight: normal;
+    font-size: 18px;
+    padding: 25px 17px;
+    cursor: default;
+ }
+ #navbar .navbar-container ul .separator-navbar:hover{
+   color: #ffffff;
+ }
+
+/*
+#navbar .navbar-container ul li:nth-child(3){
+    border-right: 1px solid #ffffff;
+ }
+ */
+#showcase{
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background: url("img/showcase.webp") center center/cover;
+   background-color: rgba(0, 0, 0, .7);
+   background-blend-mode: color;
+}
+#showcase .showcase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#showcase .showcase-container h1{
+    color: #1ED760;
+    margin-bottom: 24px;
+    line-height: 1;
+    font-weight: bold;
+}
+#showcase .showcase-container h2{
+    color: #1ED760;
+    margin-bottom: 24px;
+    line-height: 1;
+    font-weight: bold;
+}
+#showcase .showcase-container p{
+    color: #1ED760;
+    margin-bottom: 24px;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+@media (min-width: 992px){
+  #showcase .showcase-container h1 {
+    font-size: 150px;
+  }
+  #showcase .showcase-container h2 {
+    font-size: 150px;
+  }
+}
+
+/*Footer*/
+#footer{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+#footer .footer-content {
+    display: flex;
+    width: 60%;
+    margin: auto;
+    padding: 80px 0;
+    width: 85%;
+}
+#footer .footer-content .footer-menu{
+   margin: 0 40px;
+   list-style: none;
+   justify-content: center;
+}
+#footer .footer-content .footer-menu .footer-menu-item{
+    margin: 25px 0;
+}
+
+#footer .footer-content .footer-menu-item:hover{
+    color: #1ED760;
+    cursor: pointer;
+}
+
+#footer .footer-content .footer-menu p{
+    color: #919496;
+    font-size: 12px;
+    font-weight: 900;
+    line-height: 1.4;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+ }
+ @media (min-width: 992px){
+      #footer .footer-content .footer-menu p{
+         margin: 20px 0;
+    }
+}
+
+/*Footer socials*/
+
+.socials{
+    display: flex;
+    margin-left: 170px;
+}
+.socials .socials-back{
+    border-radius: 50%;
+    background-color: #222326;
+    width: 54px;
+    height: 54px;
+    margin: 7px;
+}
+.socials i{
+    font-size: 30px;
+    margin: 25%;
+    
+}
+.socials i:hover{
+    color: #1ED760;
+    cursor: pointer;
+}
+/*Footer info*/
+.footer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.footer-info .footer-info-item{
+    display: flex;
+    font-style: none;
+    margin: 40px 0;
+}
+
+.footer-info .footer-info-item .footer-info-items{
+    color: #919496;
+    margin: 0 10px;
+    font-weight: bold;
+    padding: 1rem 0;
+    font-size: 12px;
+}
+
+.footer-info .footer-info-item .footer-info-items:hover{
+    color: #1ED760;
+    cursor: pointer;
+}
+.footer-info .rights{
+    color: #919496;
+    margin: 0 20px 50px 30px;
+    font-weight: bold;
+    padding: 1rem 0;
+    font-size: 12px;
+}
+.footer-info .rights .country{
+   display: flex;
+   justify-content: flex-end;
+   padding: 10px;
+}
+.footer-info .rights .country:hover{
+  color: #1ED760;
+  cursor: pointer;
+}
+.footer-info .rights .country .brazil-flag{
+    height: 18px;
+    width: auto;
+    margin-left: 10px;
+}
